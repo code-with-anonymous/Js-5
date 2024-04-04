@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <headerr>
+        <nav class="navbar navbar-expand-lg  bg-info">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Assignment</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon fw-bolder"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Chapter 21-25</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-dark" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </headerr>
+
+    <main>
+
+  <div class="container mt-4">
+    <div class="row">
+        <div class="col">
+            <h3 class="text-center mb-3 ">Chapter # 21 to 25|String & it's methods </h3>
+        </div>
+        <!-- border -->
+        <div class="border border-bottom "></div>
+      </div>
+    </div>
+
+
+    <div class="container my-4">
+      <div class="row">
+        <div class="col-md-12 col-lg-6 p-4">
+          <h3 class="text-center">Input</h3>
+          <div class=" input-group mb-3 border border-black rounded-1 p-4">
+            <input type="text" class="form-control " id="input-text" placeholder="Type your text here" aria-label="default input example">
+            <button type="button" class="btn btn-outline-dark rounded-0" onclick="clearInput()" id="clear0">Clear</button>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-6 ms-md-auto p-4">
+          <h3 class="text-center">Original String</h3>
+          <div class="input-grooup mb-3 border border-black rounded-1 p-2">
+          <div class="original  rounded-2 text-white text-center  ">
+          
+          <p class="mb-1">I love my country Pakistan</p>
+          <p class="mb-1">I love my city Faisalabad</p>
+          <p class="mb-1">I love my homeland</p>
+       
+          </div>
+        </div>
+      </div>
+
+      <div class="container text-center mt-4">
+         
+        <div class="row">
+          <div class="col-md-6">
+            <h4>Buttons</h4>
+            <div class="row d-flex justify-content-center border border-black p-4 rounded-2">
+              <div class="col-sm-6 mb-3">
+                <button class="btn btn-danger w-100" onclick="lowerCase()">Convert to lowerCase</button>
+              </div>
+              <div class="col-sm-6 mb-3">
+                <button class="btn btn-danger w-100" onclick="upperCase()">Convert to UpperCase</button>
+              </div>
+              <div class="col-sm-6 mb-3">
+                <button class="btn btn-danger w-100" onclick="capitalize()">Convert to Captialize</button>
+              </div>
+              <div class="col-sm-6 mb-3">
+                <button class="btn btn-danger w-100" onclick="formatting()">Better Formating</button>
+              </div>
+              <div class="col-sm-6 mb-3">
+                <button class="btn btn-danger w-100" onclick="PrintCities()">Print all cities</button>
+              </div>
+              <div class="col-sm-6 mb-3">
+                <button class="btn btn-danger w-100" onclick="addCity()">Add your cities in list</button>
+              </div>
+
+              <div class="col-sm-6 mb-3">
+                <button class="btn btn-danger w-100" onclick="checkCity()">Check our city in list</button>
+              </div>
+
+              <div class="col-sm-6 mb-3">
+                <button class="btn btn-danger w-100" onclick="findWord()">Find this word</button>
+              </div>
+
+              <div class="col-sm-6 mb-3">
+                <button class="btn btn-danger w-100" onclick="replaceWord()">Replace this word</button>
+              </div>
+
+            </div>             
+          </div>
+          <div class="Output col-md-6 ">
+            <h4>Output/Result</h4>
+            <p class="border border-black p-4 rounded-2 " id="result"></p>
+            <button type="button" class="btn btn-outline-dark mt-3 " onclick="clearOutput()" id="btn">Clear Result</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </main>
+    
+    <footer>
+<p class="text-center bg-info py-2"><b>&copy; 2024 .All Rights are Reserved</b></p>
+    </footer>
+    <!-- Bootstrap 5.3.3 -->
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom js -->
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+#result{
+    height: 315px;
+    overflow-y:  auto;
+
+}
+.input-grooup{
+    background-color: #005f73;
+}
+.input-group{
+    height: 100px;
+}
