@@ -44,7 +44,7 @@ function capitalize(){
 function formatting(){
     let text=document.getElementById("input-text").value
 if(!text){
-    document.getElementById("result").innerHTML="<span>Please enter any text"
+    alert(" Please enter any text ")
     return
     
 }
@@ -61,14 +61,14 @@ function addCity(){
     city=firstLetter+otherLetter
     console.log(city);
      if(city.length<3){
-        document.getElementById("result").innerHTML="<span>Please enter proper city name"
+       alert("Please enter proper city name")
         return
         
     }
      for (let index = 0; index < cities.length; index++) {
         console.log('city',cities[index])
         if (city===cities[index]) {
-            document.getElementById("result").innerHTML=city+" "+"is found in the list"
+            document.getElementById("result").innerHTML=city+" "+"is successfully added in the list"
             cityfound=true
             break
         }    
@@ -90,7 +90,7 @@ function checkCity(){
     city=firstLetter+otherLetter
     console.log(city);
      if(city.length<3){
-        document.getElementById("result").innerHTML="<span>Please enter proper city name"
+      alert("Please enter proper city name to check in the list !")  
         return
         
     }

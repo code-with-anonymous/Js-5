@@ -1,5 +1,5 @@
 #result{
-    height: 315px;
+    min-height: 315px;
     overflow-y:  auto;
 
 }
@@ -8,4 +8,12 @@
 }
 .input-group{
     height: 100px;
+}
+.foot{
+    margin-bottom: 0px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    border: black 12px;
 }
